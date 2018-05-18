@@ -12,6 +12,9 @@
 		9F243F0320AEAC70007675C7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0220AEAC70007675C7 /* Product.swift */; };
 		9F243F0520AEAC78007675C7 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0420AEAC78007675C7 /* Transaction.swift */; };
 		9F243F0720AEAC87007675C7 /* ConversionRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0620AEAC87007675C7 /* ConversionRate.swift */; };
+		9F243F0920AEACF6007675C7 /* HTTPRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0820AEACF6007675C7 /* HTTPRequestHandler.swift */; };
+		9F243F0B20AEAD39007675C7 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0A20AEAD39007675C7 /* ProductTableViewCell.swift */; };
+		9F243F0D20AEAD4A007675C7 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0C20AEAD4A007675C7 /* TransactionTableViewCell.swift */; };
 		9F69D77220AEA94F000D52F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69D77120AEA94F000D52F5 /* AppDelegate.swift */; };
 		9F69D77420AEA94F000D52F5 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69D77320AEA94F000D52F5 /* ProductsViewController.swift */; };
 		9F69D77720AEA94F000D52F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F69D77520AEA94F000D52F5 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 		9F243F0220AEAC70007675C7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9F243F0420AEAC78007675C7 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		9F243F0620AEAC87007675C7 /* ConversionRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionRate.swift; sourceTree = "<group>"; };
+		9F243F0820AEACF6007675C7 /* HTTPRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestHandler.swift; sourceTree = "<group>"; };
+		9F243F0A20AEAD39007675C7 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		9F243F0C20AEAD4A007675C7 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		9F69D76E20AEA94F000D52F5 /* GNB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F69D77120AEA94F000D52F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F69D77320AEA94F000D52F5 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 		9F243EFB20AEAA6B007675C7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				9F243F0820AEACF6007675C7 /* HTTPRequestHandler.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -93,6 +100,8 @@
 		9F243EFD20AEAA7C007675C7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9F243F0A20AEAD39007675C7 /* ProductTableViewCell.swift */,
+				9F243F0C20AEAD4A007675C7 /* TransactionTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -293,10 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F69D77420AEA94F000D52F5 /* ProductsViewController.swift in Sources */,
+				9F243F0B20AEAD39007675C7 /* ProductTableViewCell.swift in Sources */,
 				9F243F0320AEAC70007675C7 /* Product.swift in Sources */,
 				9F69D77220AEA94F000D52F5 /* AppDelegate.swift in Sources */,
+				9F243F0920AEACF6007675C7 /* HTTPRequestHandler.swift in Sources */,
 				9F243F0720AEAC87007675C7 /* ConversionRate.swift in Sources */,
 				9F243F0120AEABE5007675C7 /* ProductDetailViewController.swift in Sources */,
+				9F243F0D20AEAD4A007675C7 /* TransactionTableViewCell.swift in Sources */,
 				9F243F0520AEAC78007675C7 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
