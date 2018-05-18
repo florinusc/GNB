@@ -15,6 +15,7 @@
 		9F243F0920AEACF6007675C7 /* HTTPRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0820AEACF6007675C7 /* HTTPRequestHandler.swift */; };
 		9F243F0B20AEAD39007675C7 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0A20AEAD39007675C7 /* ProductTableViewCell.swift */; };
 		9F243F0D20AEAD4A007675C7 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0C20AEAD4A007675C7 /* TransactionTableViewCell.swift */; };
+		9F243F0F20AEB01F007675C7 /* Double+BankerRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F243F0E20AEB01F007675C7 /* Double+BankerRounding.swift */; };
 		9F69D77220AEA94F000D52F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69D77120AEA94F000D52F5 /* AppDelegate.swift */; };
 		9F69D77420AEA94F000D52F5 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69D77320AEA94F000D52F5 /* ProductsViewController.swift */; };
 		9F69D77720AEA94F000D52F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F69D77520AEA94F000D52F5 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		9F243F0820AEACF6007675C7 /* HTTPRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestHandler.swift; sourceTree = "<group>"; };
 		9F243F0A20AEAD39007675C7 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		9F243F0C20AEAD4A007675C7 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		9F243F0E20AEB01F007675C7 /* Double+BankerRounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+BankerRounding.swift"; sourceTree = "<group>"; };
 		9F69D76E20AEA94F000D52F5 /* GNB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F69D77120AEA94F000D52F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F69D77320AEA94F000D52F5 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		9F243EF820AEAA4F007675C7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9F243F0E20AEB01F007675C7 /* Double+BankerRounding.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F69D77420AEA94F000D52F5 /* ProductsViewController.swift in Sources */,
+				9F243F0F20AEB01F007675C7 /* Double+BankerRounding.swift in Sources */,
 				9F243F0B20AEAD39007675C7 /* ProductTableViewCell.swift in Sources */,
 				9F243F0320AEAC70007675C7 /* Product.swift in Sources */,
 				9F69D77220AEA94F000D52F5 /* AppDelegate.swift in Sources */,
@@ -457,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = GNB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = GNB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

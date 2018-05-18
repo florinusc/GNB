@@ -10,4 +10,5 @@ import UIKit
 
 class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var skuLabel: UILabel!
+    @IBOutlet weak var transactionsNumberLabel: UILabel!
 }

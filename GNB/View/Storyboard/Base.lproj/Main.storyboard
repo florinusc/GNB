@@ -10,14 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Products View Controller-->
+        <!--Products-->
         <scene sceneID="jHU-aa-RGG">
             <objects>
                 <tableViewController id="Y7n-Ct-J9H" customClass="ProductsViewController" customModule="GNB" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fOz-ml-gFk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.93210659900000004" green="0.93210659900000004" blue="0.93210659900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.93210659900000004" green="0.93210659900000004" blue="0.93210659900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" id="BBg-pA-WIR" customClass="ProductTableViewCell" customModule="GNB" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -27,21 +28,31 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGG-QP-UZI">
-                                            <rect key="frame" x="16" y="12" width="343" height="21"/>
+                                            <rect key="frame" x="16" y="12" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zab-XX-yQ7">
+                                            <rect key="frame" x="317" y="12" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="gGG-QP-UZI" firstAttribute="bottom" secondItem="Udn-VP-NqI" secondAttribute="bottomMargin" id="LMv-Hr-7gf"/>
-                                        <constraint firstItem="gGG-QP-UZI" firstAttribute="trailing" secondItem="Udn-VP-NqI" secondAttribute="trailingMargin" id="Yyo-8T-Wkr"/>
-                                        <constraint firstItem="gGG-QP-UZI" firstAttribute="leading" secondItem="Udn-VP-NqI" secondAttribute="leadingMargin" id="tPR-nh-HiZ"/>
-                                        <constraint firstItem="gGG-QP-UZI" firstAttribute="top" secondItem="Udn-VP-NqI" secondAttribute="topMargin" constant="1" id="xOG-19-1By"/>
+                                        <constraint firstItem="zab-XX-yQ7" firstAttribute="bottom" secondItem="Udn-VP-NqI" secondAttribute="bottomMargin" id="2AA-uc-nql"/>
+                                        <constraint firstItem="zab-XX-yQ7" firstAttribute="trailing" secondItem="Udn-VP-NqI" secondAttribute="trailingMargin" id="EvJ-39-d9k"/>
+                                        <constraint firstItem="gGG-QP-UZI" firstAttribute="top" secondItem="Udn-VP-NqI" secondAttribute="topMargin" constant="1" id="Sc2-Ko-fQj"/>
+                                        <constraint firstItem="gGG-QP-UZI" firstAttribute="leading" secondItem="Udn-VP-NqI" secondAttribute="leadingMargin" id="WN3-g0-YY1"/>
+                                        <constraint firstItem="gGG-QP-UZI" firstAttribute="bottom" secondItem="Udn-VP-NqI" secondAttribute="bottomMargin" id="kmo-uU-iWZ"/>
+                                        <constraint firstItem="zab-XX-yQ7" firstAttribute="top" secondItem="Udn-VP-NqI" secondAttribute="topMargin" constant="1" id="q2X-xR-n7V"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.93210659900000004" green="0.93210659900000004" blue="0.93210659900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <outlet property="skuLabel" destination="gGG-QP-UZI" id="bVV-uU-mcg"/>
+                                    <outlet property="transactionsNumberLabel" destination="zab-XX-yQ7" id="HlX-mT-frr"/>
                                     <segue destination="601-eL-jQE" kind="show" identifier="goToProduct" id="9o7-x9-Ttq"/>
                                 </connections>
                             </tableViewCell>
@@ -51,11 +62,11 @@
                             <outlet property="delegate" destination="Y7n-Ct-J9H" id="JZO-PX-LS7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5kH-7C-1nc"/>
+                    <navigationItem key="navigationItem" title="Products" id="5kH-7C-1nc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGf-8X-XjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="145"/>
+            <point key="canvasLocation" x="732" y="144.3778110944528"/>
         </scene>
         <!--Product Detail View Controller-->
         <scene sceneID="3CS-sh-gbN">
@@ -64,9 +75,9 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QcK-rc-WgJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.93210659900000004" green="0.93210659900000004" blue="0.93210659900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="transactionCell" id="wEk-Mq-mUE" customClass="TransactionTableViewCell" customModule="GNB" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="transactionCell" id="wEk-Mq-mUE" customClass="TransactionTableViewCell" customModule="GNB" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wEk-Mq-mUE" id="cPC-Ed-h1J">
@@ -87,6 +98,7 @@
                                         <constraint firstItem="C0I-3J-j4S" firstAttribute="top" secondItem="cPC-Ed-h1J" secondAttribute="topMargin" constant="1" id="Xee-1m-GOv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.93210659900000004" green="0.93210659900000004" blue="0.93210659900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <outlet property="transactionLabel" destination="C0I-3J-j4S" id="1Yd-uW-T30"/>
                                 </connections>
@@ -110,6 +122,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nT3-uN-6fa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.14348105119642779" green="0.32573619948163191" blue="0.71797627210617065" alpha="0.52375856160000001" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
