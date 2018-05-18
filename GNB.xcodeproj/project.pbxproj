@@ -40,6 +40,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F243EF820AEAA4F007675C7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9F243EF920AEAA57007675C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F243EFA20AEAA5B007675C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F243EFE20AEAA82007675C7 /* Storyboard */,
+				9F243EFD20AEAA7C007675C7 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F243EFB20AEAA6B007675C7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9F243EFC20AEAA73007675C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F69D77320AEA94F000D52F5 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F243EFD20AEAA7C007675C7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9F243EFE20AEAA82007675C7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9F69D77520AEA94F000D52F5 /* Main.storyboard */,
+				9F69D77A20AEA951000D52F5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9F243EFF20AEAA8F007675C7 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				9F69D77120AEA94F000D52F5 /* AppDelegate.swift */,
+				9F69D77820AEA951000D52F5 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		9F69D76520AEA94F000D52F5 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +124,12 @@
 		9F69D77020AEA94F000D52F5 /* GNB */ = {
 			isa = PBXGroup;
 			children = (
-				9F69D77120AEA94F000D52F5 /* AppDelegate.swift */,
-				9F69D77320AEA94F000D52F5 /* ViewController.swift */,
-				9F69D77520AEA94F000D52F5 /* Main.storyboard */,
-				9F69D77820AEA951000D52F5 /* Assets.xcassets */,
-				9F69D77A20AEA951000D52F5 /* LaunchScreen.storyboard */,
+				9F243EFF20AEAA8F007675C7 /* Supporting files */,
+				9F243EFC20AEAA73007675C7 /* Controller */,
+				9F243EFB20AEAA6B007675C7 /* Helper */,
+				9F243EFA20AEAA5B007675C7 /* View */,
+				9F243EF920AEAA57007675C7 /* Model */,
+				9F243EF820AEAA4F007675C7 /* Extension */,
 				9F69D77D20AEA951000D52F5 /* Info.plist */,
 			);
 			path = GNB;
@@ -365,7 +429,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = GNB/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = approcket.GNB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -381,7 +448,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = GNB/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = approcket.GNB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
