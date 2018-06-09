@@ -74,7 +74,7 @@ class ProductsViewController: UITableViewController, TransactionDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ProductTableViewCell
         
-        cell.skuLabel.text = "SKU: " + productArray[indexPath.row].sku
+        cell.skuLabel.text = "(change 1) SKU: " + productArray[indexPath.row].sku
         
         cell.transactionsNumberLabel.text = "(\(productArray[indexPath.row].transactions.count) transactions)"
         
